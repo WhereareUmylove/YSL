@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/Land&Register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Foot.css"/>
+	</head>
+	<body>
+		<div class="Register_Content">
+			<h2>新用户注册</h2>
+			<form action="php/Register.php" method="post" class="Register_form">
+				<span>称谓</span>
+				<input type="radio" name="radio" id="sex1" value="女" /><span>女士</span>
+				<input type="radio" name="radio" id="sex2" value="男" /><span>男士</span>
+				<span class="mustfull">(*必填项)</span>
+				
+				<p>您的手机/邮箱<span>*</span><a id="anchor1"href="javascript:void(0);"></a></p>
+				<input type="text" name="name" id="Land_tel" value="" placeholder="请输入有效的邮箱或手机"/>
+				<p id="inner_Land_text"></p>
+				
+				<p>姓名</p>
+				<input type="text" name="ChineseName" id="Land_name" value="" />
+				
+				<p>密码<span>*</span><a id="anchor2"href="javascript:void(0);"></a></p>
+				<input type="password" name="password" id="Land_password" value="" />
+				<p id="inner_Land_password"></p>
+				
+				<p>确认密码<span>*</span></p>
+				<input type="password" name="password2" id="Land_password2" value="" />
+				<p id="inner_Land_password2" class="red"></p><p id="same" class="red"></p>
+				
+				<p>请输入验证码<span>*</span></p>
+				<input type="text" name="verification" id="Land_verification" value="" />
+				<span id="changeVerification"></span><span id="TimeOut"></span>
+				<a href="javascript:void(0);" onclick="changeVerification()">换一张</a>
+				
+				<p>短信验证码<span>*</span></p>
+				<input type="text" name="verification_tel" id="Land_verification_tel" value="" />
+				<input type="button" name="" id="" value="获取短信验证码" />
+				
+				<br />
+				<input type="checkbox" name="" id="agree"/><font class="Agreement">	我愿意订阅圣罗兰电子杂志。</font>
+				<br />
+				<input type="checkbox" name="" id="agree"/>
+					<font class="Agreement">我同意依照本
+						<a target="_blank" href="http://policy.lorealchina.com/termsofusewebsite">使用条款</a>
+						和<a target="_blank" href="http://policy.lorealchina.com/privacypolicy">隐私政策</a>
+						对我的个人信息进行收集和使用；我已阅读并确认被给予充分机会理解该
+						<a target="_blank" href="http://policy.lorealchina.com/termsofusewebsite">使用条款</a>
+						和<a target="_blank" href="http://policy.lorealchina.com/privacypolicy">隐私政策</a>的内容。
+					</font>
+				<br />
+				<input type="button" name="" id="agreeYou" value="同意协议并注册" />
+			</form>
+			<div class="line"><span class="line_moddle">或</span></div>
+			<div class="other_land">
+				<p>我是已注册用户，前往<a href="Land.html">登陆</a></p>
+				<p>使用合作网站账号登录</p>
+				<ul>
+					<li><a href="javascript:void(0);"><span>QQ</span></a></li>
+					<li><a href="javascript:void(0);"><span>新浪</span></a></li>
+					<li><a href="javascript:void(0);"><span>支付宝</span></a></li>
+					<li><a href="javascript:void(0);"><span>微信</span></a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="foot">
+			<div class="footer_title">
+                <p>
+                    客户咨询热线：400-820-6362 <span>（9:00-21:00）</span>
+                </p>
+                <a onclick="window.open('http://care3.live800.com/live800/chatClient/chatbox.jsp?companyID=8169&amp;configID=2489&amp;skillId=655&amp;enterurl=%e5%9c%a3%e7%bd%97%e5%85%b0', 'newwindow', 'height=600, width=700, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no')" class="btn btn-online-service"> <i class="icon icon-online-service"></i>在线咨询
+                </a>
+            </div>
+            <h1 class="footer_logo">
+                <a href="/"><img src="https://res.yslbeautycn.com/build/images/footer-logo.png" alt=""></a>
+            </h1>
+            <div class="footer_please">
+                <div>
+                    <a href="javascript:void(0);"><span class="weibo"></span>
+                    </a>
+                    <a href="javascript:void(0);"><span class="weixin"></span>
+                    </a>
+                    <span class="guanzhu">
+                        请关注<br>YSL圣罗兰美妆<br>微信公众号
+                    </span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul class="statement">
+                    <li class="none-sm"><span>© 欧莱雅（中国）有限公司</span></li>
+                    <li><i class="icon icon-footer-zggs"></i> <a  href="javascript:;">
+                        <span>中国工商</span>
+                    </a><span>&nbsp;&nbsp;</span>
+                        <a  href="javascript" rel="nofollow"> <span>沪ICP备08100043号-28&nbsp; </span>
+                        </a>
+                    </li>
+                    <li><i class="icon icon-footer-hgyab"></i> <a herf="javascript:;">
+                        <span>沪公网安备 31010602001529号</span>
+                    </a></li>
+                    <li class=""><span>欧莱雅中国有限公司</span> <span>地址：上海市静安区南京西路1601号</span>
+                    </li>
+                </ul>
+                <div class="con-content">
+                    <ul>
+                        <li><a  href="javascript:;" rel="nofollow">Cookies政策</a></li>
+                        <li><a  href="javascript:;" rel="nofollow">使用条款</a></li>
+                        <li><a  href="javascript:;" rel="nofollow">隐私政策</a></li>
+                        <li class="none-sm"><a href="javascript:void(0);">网站地图</a></li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+	</body>
+	<script src="js/Register.js" type="text/javascript" charset="utf-8"></script>
+</html>
